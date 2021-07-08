@@ -5,7 +5,6 @@ open FTGO.Common.BaseTypes
 open FTGO.Restaurant.BaseTypes
 open FTGO.Restaurant.Events
 open FTGO.Restaurant.Entities
-open AD.InMemoryStore
 open AD.InMemoryStore.Functional
 
 type Stores = {

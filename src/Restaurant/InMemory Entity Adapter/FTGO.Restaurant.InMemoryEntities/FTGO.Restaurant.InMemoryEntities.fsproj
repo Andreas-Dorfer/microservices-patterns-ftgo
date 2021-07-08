@@ -11,7 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AD\AD.InMemoryStore.Functional\AD.InMemoryStore.Functional.fsproj" />
+    <PackageReference Include="AndreasDorfer.InMemoryStore.Functional" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\FTGO.Restaurant.Entities\FTGO.Restaurant.Entities.fsproj" />
   </ItemGroup>
 
