@@ -8,14 +8,14 @@ open FTGO.Restaurant.Entities
 open AD.InMemoryStore.Functional
 
 type Stores = {
-    Restaurants : InMemoryStore<RestaurantId, RestaurantEntity>
-    Events : InMemoryStore<Guid, RestaurantCreatedEvent>
+    Restaurants : KeyValueStore<RestaurantId, RestaurantEntity>
+    Events : KeyValueStore<Guid, RestaurantCreatedEvent>
 }
 
 module Stores =
     let create () = {
-        Restaurants = InMemoryStore<RestaurantId, RestaurantEntity> ()
-        Events = InMemoryStore<Guid, RestaurantCreatedEvent> ()
+        Restaurants = KeyValueStore<RestaurantId, RestaurantEntity> ()
+        Events = KeyValueStore<Guid, RestaurantCreatedEvent> ()
     }
 
 module RestaurantAggregateAdapter =
